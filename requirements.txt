@@ -1,0 +1,36 @@
+# Google Cloud
+google-cloud-storage>=2.10.0
+google-generativeai>=0.3.0
+
+# Docling - Document parsing
+docling>=1.0.0
+
+# Google ADK
+google-adk>=1.18.0
+
+# LlamaIndex
+llama-index>=0.9.0
+llama-index-core>=0.9.0
+llama-index-embeddings-openai>=0.1.0
+llama-index-vector-stores-qdrant>=0.1.0
+llama-index-readers-file>=0.1.0  # For PyMuPDFReader
+
+# PyMuPDF (for fast PDF extraction)
+pymupdf>=1.23.0
+
+# OpenAI
+openai>=1.0.0
+
+# Qdrant
+qdrant-client>=1.7.0
+
+# Utilities
+python-dotenv>=1.0.0
+pyyaml>=6.0
+requests>=2.31.0
+pydantic>=2.0.0
+
+# Development
+pytest>=7.4.0
+black>=23.0.0
+flake8>=6.0.0

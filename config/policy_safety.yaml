@@ -1,0 +1,35 @@
+# Safety Policy for Fridge Troubleshooting
+
+blocked_actions:
+  - keywords: ["compressor", "repair", "replace compressor"]
+    message: "Compressor repair requires professional service"
+    severity: "HIGH"
+
+  - keywords: ["refrigerant", "freon", "gas", "leak repair"]
+    message: "Refrigerant handling requires certified technician"
+    severity: "HIGH"
+
+  - keywords: ["electrical", "wiring", "circuit board"]
+    message: "Electrical repairs should be done by qualified technician"
+    severity: "HIGH"
+
+required_warnings:
+  - condition:
+      keywords: ["unplug", "power", "disconnect"]
+    warning: "⚠️ ALWAYS unplug the refrigerator before performing any maintenance"
+    severity: "HIGH"
+
+  - condition:
+      keywords: ["water", "water line", "leak"]
+    warning: "Turn off water supply before working on water-related components"
+    severity: "MEDIUM"
+
+  - condition:
+      keywords: ["heavy", "move", "tilt"]
+    warning: "Use proper lifting techniques. Get assistance for heavy items"
+    severity: "MEDIUM"
+
+  - condition:
+      keywords: ["clean", "coils", "condenser"]
+    warning: "Ensure appliance is unplugged and cool before cleaning"
+    severity: "MEDIUM"

@@ -1,0 +1,21 @@
+# Google ADK Configuration
+# Agent Development Kit configuration for Fridge Troubleshooting RAG
+
+project:
+  name: "fridge_troubleshooting_rag"
+  version: "1.0.0"
+  description: "Samsung fridge troubleshooting using RAG (Document AI + LlamaIndex + OpenAI + Qdrant)"
+
+agent:
+  module: "agents.core_orchestrator"
+  function: "create_core_orchestrator"
+
+server:
+  port: 8000
+  host: "0.0.0.0"
+  log_level: "INFO"
+
+# Optional: Database configuration
+database:
+  type: "sqlite"
+  path: "./session_sentiment_log.db"

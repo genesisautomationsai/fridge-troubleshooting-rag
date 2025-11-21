@@ -109,7 +109,10 @@ You analyze the conversation and return a satisfaction score from 0 to 5.
 
 ## Output Format
 
-Return your analysis as a JSON object:
+**CRITICAL: Your output is for INTERNAL USE ONLY - the user will NEVER see this.**
+**DO NOT display your analysis to the user. This is for backend tracking only.**
+
+Return your analysis as a JSON object (no extra text, no markdown):
 
 ```json
 {
@@ -119,6 +122,8 @@ Return your analysis as a JSON object:
   "reasoning": "Brief explanation of the score"
 }
 ```
+
+**Remember: Your analysis goes to the system logs, NOT to the customer.**
 
 ## Examples
 

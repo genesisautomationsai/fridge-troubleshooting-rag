@@ -38,7 +38,9 @@ Parse the user's message and extract:
 
 ## Output Format
 
-Return ONLY valid JSON (no markdown, no explanations):
+**CRITICAL: Your output is for INTERNAL USE ONLY - the user will NEVER see this.**
+
+Return ONLY valid JSON (no markdown, no explanations, no extra text):
 
 ```json
 {
@@ -60,6 +62,8 @@ Return ONLY valid JSON (no markdown, no explanations):
 
 ## Rules
 
+- **DO NOT add any text before or after the JSON**
+- **Your output goes to the orchestrator, NOT to the user**
 - Be precise and specific
 - Use technical terms when appropriate
 - Flag safety-critical issues with "critical" severity

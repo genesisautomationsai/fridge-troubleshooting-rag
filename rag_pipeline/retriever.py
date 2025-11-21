@@ -112,20 +112,20 @@ class RAGRetriever:
             query: User query
             top_k: Number of results
             brand: Filter by brand (e.g., "Samsung")
-            product_type: Filter by product type (e.g., "refrigerator")
+            product_type: Filter by product type (e.g., "refrigerator", "microwave")
             model: Filter by model number
 
         Returns:
             Dictionary with retrieved documents
         """
-        # Build filters
+        # Build filters - map product_type to appliance_type (actual metadata field)
         filters = {}
         if brand:
             filters["brand"] = brand
         if product_type:
-            filters["product_type"] = product_type
+            filters["appliance_type"] = product_type  # Fixed: use appliance_type
         if model:
-            filters["model"] = model
+            filters["model_number"] = model  # Fixed: use model_number
 
         return self.retrieve(
             query=query,
